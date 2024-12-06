@@ -11,6 +11,13 @@ if (!token) {
 
 export const bot = new TelegramBot(token, {polling: true})
 
+interface User{
+    chatId: number,
+    isThirdStep: boolean
+}
+
+export const users:User[] = []
+
 const setup = () => {
     setupCommands(commandsList)
     setupHandlers(handlersList)

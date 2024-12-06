@@ -9,7 +9,9 @@ const startCommand = (msg:TelegramBot.Message) => {
             throw Error(`Chat-id is ${chatId}`)
         }
 
-        bot.sendMessage(chatId, "Привет! Напиши Хочу курс (либо курс)");
+        bot.sendMessage(chatId, "Привет!");
+
+
     } catch (error) {
         console.error(error);
     }
