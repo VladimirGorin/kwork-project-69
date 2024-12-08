@@ -9,8 +9,8 @@ const AppDataSource = new DataSource({
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
-  synchronize: true, // True only for dev!
-  logging: true,
+  synchronize: false, // True only for dev!
+  logging: false,
   entities: [User, Message],
   migrations: [],
   subscribers: [],
